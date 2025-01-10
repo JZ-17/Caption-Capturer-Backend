@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load Whisper model
-model = whisper.load_model("large")
+model = whisper.load_model("base")
 translator = Translator()
 
 @app.route("/translate", methods=["POST"])
